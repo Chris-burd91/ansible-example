@@ -1,0 +1,18 @@
+
+[dockers]
+34.89.20.169
+34.89.119.33
+[nginx]
+34.89.20.169
+34.105.132.178
+
+[dockers:vars]
+ansible_user=chrisburd91
+ansible_ssh_common_args='-o StrictHostKeyChecking=no'
+ansible_ssh_private_key_file=~/.ssh/id_rsa
+
+[nginx:vars]
+ansible_user=chrisburd91
+ansible_ssh_common_args='-o StrictHostKeyChecking=no'
+ansible_ssh_private_key_file=~/.ssh/id_rsa
+
